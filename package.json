@@ -11,7 +11,7 @@
     "url": "git+https://github.com/jugendpresse/artikel-13.git"
   },
   "author": "Martin Winter <m.winter@jugendpresse.de>",
-  "license": "UNLICENSED",
+  "license": "GPLv3",
   "bugs": {
     "url": "https://github.com/jugendpresse/artikel-13/issues"
   },

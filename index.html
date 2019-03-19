@@ -5,35 +5,67 @@
         <title>M&ouml;chten Sie das Internet wirklich l&ouml;schen?</title>
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/dist/fullpage.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="assets/style.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="node_modules/fullpage.js/vendors/scrolloverflow.min.js"></script>
-        <script type="text/javascript" src="node_modules/fullpage.js/dist/fullpage.min.js"></script>
+        <script type="text/javascript" src="node_modules/fullpage.js/dist/fullpage.extensions.min.js"></script>
+        <script type="text/javascript" src="assets/action.js"></script>
     </head>
     <body>
         <div id="fullpage" class="">
-            <div class="section">
+            <div class="section" id="welcome">
                 <h1>Unsere Homepage wurde gefiltert.</h1>
             </div>
-            <div class="section">Some section</div>
-            <div class="section">Some section</div>
-            <div class="section">Some section</div>
-            <div class="section">Some section</div>
-            <div class="section">Some section</div>
+            <div class="section" id="cancel">
+                <h1>You pressed >Cancel<</h1>
+            </div>
+            <div class="section" id="delete">
+                <h1>You pressed >Delete<</h1>
+            </div>
+            <div class="section" id="ants">
+                <canvas id="tv"></canvas>
+            </div>
+            <div class="section" id="faq">
+                <h1>FAQ</h1>
+            </div>
+            <div class="section" id="imprint">
+                <h2>Impressum</h2>
+                <p>
+                    Jugendpresse Deutschland e.V.<br/>
+                    Bundesverband junger Medienmacher
+                </p>
+                <p>
+                    Alt-Moabit 89<br/>
+                    10559 Berlin
+                </p>
+                <p>
+                    Telefon: 030 / 39 40 525-00<br/>
+                    Telefax: 030 / 39 40 525-05<br/>
+                    Mail: buero[at]jugendpresse.de
+                </p>
+                <p>
+                    Eingetragen in das Vereinsregister beim Amtsgericht Berlin-Charlottenburg unter Nr. 22772.<br/>
+                    Vertretungsberechtigter Vorstand sind Helene Fuchs, Maja Herzog, Maximilian Gens, Jonas Gebauer und Martin Winter.<br/>
+                    Die Jugendpresse Deutschland ist anerkannter Träger der freien Jugendhilfe gemäß §75 des Kinder- und Jugendhilfegesetz.<br/>
+                    Die Jugendpresse Deutschland ist lt. Bescheid des Finanzamt für Körperschaften I, 14057 Berlin vom 21. Oktober 2016 als gemeinnützige Organisation anerkannt.
+                </p>
+                <p>
+                    Umsatzsteuer-ID: DE237345635
+                </p>
+                <h2>Credits</h2>
+                <p>
+                    Grafik & Photo: Jugendpresse Deutschland / Marlene Perna & Maximilian Gens
+                </p>
+                <p>
+                    TV static noise:  <a class="text-white" href="https://codepen.io/alenaksu/pen/dGjeMZ" target="_blank">Alessandro Valeri</a>
+                </p>
+                <h2>Datenschutz</h2>
+                <p>
+                    Auf diesem tempor&auml;ren Onepager setzen wir keine Tracking-Tools ein, es werden ausschließlich Meta-Daten deines Besuchs in den Log-Files unseres Webservers gespeichert. Diese sind leider nicht vermeidbar, da er dir ja diese Website ausliefern muss.
+                </p>
+            </div>
         </div>
-        <script type="text/javascript">
-            $(document).ready(function() {
-            	$('#fullpage').fullpage({
-            		//options here
-            		autoScrolling:true,
-            		scrollHorizontally: true
-            	});
-
-            	//methods
-            	$.fn.fullpage.setAllowScrolling(true);
-            });
-        </script>
     </body>
 </html>

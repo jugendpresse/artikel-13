@@ -1,0 +1,51 @@
+html,
+body,
+#fullpage,
+#fullpage .section,
+#tv {
+    height: 100%;
+    min-height: 100%;/*for mozilla*/
+	width: 100%;
+}
+
+.section {
+    overflow: hidden;
+    position: relative;
+}
+
+.fp-tableCell {
+    width: 100vw;
+}
+
+#ants {
+    display: none;
+}
+
+#welcome,
+#delete {
+    background: #E53212;
+    color: #ffffff;
+}
+
+#tv {
+    padding: 0;
+	margin: 0;
+	position: relative;
+	top: 0;
+	left: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+}
+
+#imprint {
+    background: #2A55AB;
+    color: #ffffff;
+}
+
+#faq {
+    background: #000000;
+    color: #ffffff;
+}
