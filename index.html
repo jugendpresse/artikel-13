@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>M&ouml;chten Sie das Internet wirklich l&ouml;schen?</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/dist/fullpage.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="node_modules/fullpage.js/vendors/scrolloverflow.min.js"></script>
+        <script type="text/javascript" src="node_modules/fullpage.js/dist/fullpage.min.js"></script>
+    </head>
+    <body>
+        <div id="fullpage" class="">
+            <div class="section">
+                <h1>Unsere Homepage wurde gefiltert.</h1>
+            </div>
+            <div class="section">Some section</div>
+            <div class="section">Some section</div>
+            <div class="section">Some section</div>
+            <div class="section">Some section</div>
+            <div class="section">Some section</div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function() {
+            	$('#fullpage').fullpage({
+            		//options here
+            		autoScrolling:true,
+            		scrollHorizontally: true
+            	});
+
+            	//methods
+            	$.fn.fullpage.setAllowScrolling(true);
+            });
+        </script>
+    </body>
+</html>

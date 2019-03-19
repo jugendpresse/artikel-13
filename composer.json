@@ -1,0 +1,12 @@
+{
+    "name": "jugendpresse/artikel-13",
+    "description": "Onepager for pr event on 21th of March 2019 against article 13",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Martin Winter",
+            "email": "m.winter@jugendpresse.de"
+        }
+    ],
+    "require": {}
+}

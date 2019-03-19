@@ -1,0 +1,11 @@
+html,
+body,
+#fullpage,
+#fullpage .section {
+    height: 100%;
+    min-height: 100%;/*for mozilla*/
+}
+
+.section {
+    overflow: hidden;
+}
