@@ -1,12 +1,15 @@
 $(document).ready(function() {
+    var size = parseFloat( $("body").css('font-size'), 10);
+    if (size > 15) {
+        $("body").css('font-size', '12pt');
+    }
+
     $('#fullpage').fullpage({
         //options here
         // licenseKey: 'should be set',
         autoScrolling: true,
         scrollHorizontally: true
     });
-
-    $('#ants').show();
 
     //methods
     $.fn.fullpage.setAllowScrolling(true);
@@ -15,7 +18,6 @@ $(document).ready(function() {
     	"use strict";
 
     	var canvas = document.getElementById('tv');
-        console.log(canvas)
     	var context = canvas.getContext("gl") || canvas.getContext("2d"),
     		scaleFactor = 2.5, // Noise size
     		samples = [],

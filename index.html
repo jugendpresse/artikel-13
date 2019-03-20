@@ -2,6 +2,7 @@
 <html lang="de" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>M&ouml;chten Sie das Internet wirklich l&ouml;schen?</title>
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/dist/fullpage.min.css" />
@@ -14,58 +15,84 @@
         <script type="text/javascript" src="assets/action.js"></script>
     </head>
     <body>
-        <div id="fullpage" class="">
-            <div class="section" id="welcome">
-                <h1>Unsere Homepage wurde gefiltert.</h1>
+        <div id="fullpage" class="container-fluid">
+            <div class="section row" id="welcome">
+                <div class="containter">
+                    <div class="row row-indent">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6 p-sm-3">
+                            <h3>Unsere Homepage wurde gefiltert.</h3>
+                            <p>
+                                In der nächsten Woche soll das Europäische Parlament die neue Richtlinie für das Urheberrecht im Digitalen Binnenmarkt der europäischen Union verabschieden – gegen die Proteste von mehreren Millionen Menschen!
+                            </p>
+                            <p>
+                                Gemeinsam mit zahlreichen anderen Websites protestieren wir heute im Internet mit erschreckender Leere und fragen:
+                            </p>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                </div>
             </div>
-            <div class="section" id="cancel">
-                <h1>You pressed >Cancel<</h1>
+            <div class="section row" id="cancel">
+                <h4>You pressed >Cancel<</h4>
             </div>
-            <div class="section" id="delete">
-                <h1>You pressed >Delete<</h1>
+            <div class="section row" id="faq">
+                <h4>FAQ 😺</h4>
             </div>
-            <div class="section" id="ants">
+            <div class="section row" id="delete">
+                <h4>You pressed >Delete<</h4>
+            </div>
+            <div class="section row" id="ants">
                 <canvas id="tv"></canvas>
             </div>
-            <div class="section" id="faq">
-                <h1>FAQ</h1>
+            <div class="section row" id="faq_devil">
+                <h4>FAQ 👿</h4>
             </div>
-            <div class="section" id="imprint">
-                <h2>Impressum</h2>
-                <p>
-                    Jugendpresse Deutschland e.V.<br/>
-                    Bundesverband junger Medienmacher
-                </p>
-                <p>
-                    Alt-Moabit 89<br/>
-                    10559 Berlin
-                </p>
-                <p>
-                    Telefon: 030 / 39 40 525-00<br/>
-                    Telefax: 030 / 39 40 525-05<br/>
-                    Mail: buero[at]jugendpresse.de
-                </p>
-                <p>
-                    Eingetragen in das Vereinsregister beim Amtsgericht Berlin-Charlottenburg unter Nr. 22772.<br/>
-                    Vertretungsberechtigter Vorstand sind Helene Fuchs, Maja Herzog, Maximilian Gens, Jonas Gebauer und Martin Winter.<br/>
-                    Die Jugendpresse Deutschland ist anerkannter Träger der freien Jugendhilfe gemäß §75 des Kinder- und Jugendhilfegesetz.<br/>
-                    Die Jugendpresse Deutschland ist lt. Bescheid des Finanzamt für Körperschaften I, 14057 Berlin vom 21. Oktober 2016 als gemeinnützige Organisation anerkannt.
-                </p>
-                <p>
-                    Umsatzsteuer-ID: DE237345635
-                </p>
-                <h2>Credits</h2>
-                <p>
-                    Grafik & Photo: Jugendpresse Deutschland / Marlene Perna & Maximilian Gens
-                </p>
-                <p>
-                    TV static noise:  <a class="text-white" href="https://codepen.io/alenaksu/pen/dGjeMZ" target="_blank">Alessandro Valeri</a>
-                </p>
-                <h2>Datenschutz</h2>
-                <p>
-                    Auf diesem tempor&auml;ren Onepager setzen wir keine Tracking-Tools ein, es werden ausschließlich Meta-Daten deines Besuchs in den Log-Files unseres Webservers gespeichert. Diese sind leider nicht vermeidbar, da er dir ja diese Website ausliefern muss.
-                </p>
+            <div class="section row" id="imprint">
+                <div class="containter">
+                    <div class="row row-indent">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6 p-sm-3 pb-5 scroll">
+                            <h6>Impressum</h6>
+                            <p>
+                                Jugendpresse Deutschland e.V.<br/>
+                                Bundesverband junger Medienmacher
+                            </p>
+                            <p>
+                                Alt-Moabit 89<br/>
+                                10559 Berlin
+                            </p>
+                            <p>
+                                Telefon: 030 / 39 40 525-00<br/>
+                                Telefax: 030 / 39 40 525-05<br/>
+                                Mail: buero[at]jugendpresse.de
+                            </p>
+                            <p>
+                                Eingetragen in das Vereinsregister beim Amtsgericht Berlin-Charlottenburg unter Nr. 22772.<br/>
+                                Vertretungsberechtigter Vorstand sind Helene Fuchs, Maja Herzog, Maximilian Gens, Jonas Gebauer und Martin Winter.<br/>
+                                Die Jugendpresse Deutschland ist anerkannter Träger der freien Jugendhilfe gemäß §75 des Kinder- und Jugendhilfegesetz.<br/>
+                                Die Jugendpresse Deutschland ist lt. Bescheid des Finanzamt für Körperschaften I, 14057 Berlin vom 21. Oktober 2016 als gemeinnützige Organisation anerkannt.
+                            </p>
+                            <p>
+                                Umsatzsteuer-ID: DE237345635
+                            </p>
+                            <h6>Credits</h6>
+                            <p>
+                                Grafik & Photo: Jugendpresse Deutschland / Marlene Perna & Maximilian Gens
+                            </p>
+                            <p>
+                                TV static noise:  <a class="text-white" href="https://codepen.io/alenaksu/pen/dGjeMZ" target="_blank">Alessandro Valeri</a>
+                            </p>
+                            <h6>Datenschutz</h6>
+                            <p>
+                                Auf diesem tempor&auml;ren Onepager setzen wir keine Tracking-Tools ein, es werden ausschließlich Meta-Daten deines Besuchs in den Log-Files unseres Webservers gespeichert. Diese sind leider nicht vermeidbar, da er dir ja diese Website ausliefern muss.
+                            </p>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="logo"></div>
     </body>
 </html>

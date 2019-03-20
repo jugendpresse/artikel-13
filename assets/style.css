@@ -1,24 +1,37 @@
 html,
 body,
 #fullpage,
-#fullpage .section,
 #tv {
     height: 100%;
     min-height: 100%;/*for mozilla*/
 	width: 100%;
 }
 
+body {
+    font-size: 2vh;
+}
+
 .section {
     overflow: hidden;
     position: relative;
+    height: 100vh !important;
+    max-height: 100vh !important;
 }
 
 .fp-tableCell {
     width: 100vw;
+    height: 100vh;
 }
 
-#ants {
-    display: none;
+.scroll {
+    max-height: 100% !important;
+    overflow: scroll;
+}
+
+.row-indent {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 15px !important;
 }
 
 #welcome,
@@ -43,9 +56,38 @@ body,
 #imprint {
     background: #2A55AB;
     color: #ffffff;
+    font-size: 0.75em;
 }
 
-#faq {
+#faq_devil {
     background: #000000;
     color: #ffffff;
+}
+
+.logo {
+    float: right;
+    width: 250px;
+    max-width: 33.3333%;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    height: 88px;
+    background: url('logo.php') no-repeat bottom right;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
+#faq,
+#cancel {
+    background: url('team.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.no-padding {
+    padding: 0;
 }
