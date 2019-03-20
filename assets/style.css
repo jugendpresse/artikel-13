@@ -1,7 +1,7 @@
 html,
 body,
 #fullpage,
-#tv {
+#sec_tv {
     height: 100%;
     min-height: 100%;/*for mozilla*/
 	width: 100%;
@@ -20,12 +20,7 @@ body {
 
 .fp-tableCell {
     width: 100vw;
-    height: 100vh;
-}
-
-.scroll {
-    max-height: 100% !important;
-    overflow: scroll;
+    height: 100vw;
 }
 
 .row-indent {
@@ -34,8 +29,8 @@ body {
     margin: 15px !important;
 }
 
-#welcome,
-#delete {
+#sec_welcome,
+#sec_delete {
     background: #E53212;
     color: #ffffff;
 }
@@ -46,6 +41,8 @@ body {
 	position: relative;
 	top: 0;
 	left: 0;
+    width: 100vw;
+    height: 100vh;
 	-webkit-transform: translate3d(0, 0, 0);
 	-moz-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
@@ -53,18 +50,18 @@ body {
 	-webkit-perspective: 1000;
 }
 
-#imprint {
+#sec_imprint {
     background: #2A55AB;
     color: #ffffff;
     font-size: 0.75em;
 }
 
-#faq_devil {
+#sec_faq2 {
     background: #000000;
     color: #ffffff;
 }
 
-.logo {
+#logo {
     float: right;
     width: 250px;
     max-width: 33.3333%;
@@ -79,9 +76,16 @@ body {
     background-size: contain;
 }
 
-#faq,
-#cancel {
-    background: url('team.jpg') no-repeat center center;
+#sec_cancel {
+    background: url('team25.jpg') no-repeat center center;
+}
+
+#sec_faq {
+    background: url('team60.jpg') no-repeat center center;
+}
+
+#sec_faq,
+#sec_cancel {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -90,4 +94,95 @@ body {
 
 .no-padding {
     padding: 0;
+}
+
+.dialog .row {
+    margin: 0 15px !important;
+}
+
+.dialog-head {
+    border-radius: 0.75em 0.75em 0 0;
+    height: 1.25em;
+}
+
+.dialog-foot {
+    border-radius: 0 0 0.75em 0.75em;
+    height: 1.25em;
+}
+
+.dialog-head {
+    background: #CECECF;
+}
+
+
+.dialog-body,
+.dialog-foot {
+    background: #E9EAEB;
+    color: #21252B;
+    font-weight: bold;
+}
+
+.dialog-body {
+    padding-top: 1em;
+}
+
+.dialog-head.dark {
+    background: #21252B;
+}
+.dialog-body.dark,
+.dialog-foot.dark {
+    background: #555555;
+    color: #ffffff;
+}
+
+.center {
+    text-align: center;
+}
+
+.dialog {
+    font-size: 1.15em;
+}
+
+.dialog img {
+    max-width: 85px;
+}
+.icon {
+    font-size: 5em;
+}
+.smicon {
+    font-size: 3em;
+}
+
+details {
+    border: 1px solid #000;
+    border-radius: 0.25em;
+    padding: .5em .5em 0;
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+    cursor: pointer;
+    outline: none;
+}
+
+#sec_faq2 summary {
+    background: #000000;
+}
+#sec_faq2 details {
+    border: 1px solid #aaa;
+}
+
+details[open] {
+    padding: .5em;
+    background: #ffffff;
+    color: #000000;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+    color: #ffffff;
+    background: #000000;
 }

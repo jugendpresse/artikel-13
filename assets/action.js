@@ -1,19 +1,43 @@
+var filterwarnVisible = true;
+
 $(document).ready(function() {
+    // adjust font size for whole page
     var size = parseFloat( $("body").css('font-size'), 10);
     if (size > 15) {
         $("body").css('font-size', '12pt');
     }
 
+    // handle FAQ-details
+    $('details').click(function (event) {
+        $(this).parent().find('details').not(this).removeAttr('open').hide();
+    });
+    $("details").on("toggle", function () {
+        if (filterwarnVisible) {
+           $('#filterwarn').hide();
+           filterwarnVisible = false;
+        }
+        else {
+           $('#filterwarn').show();
+           filterwarnVisible = true;
+           $('details').show();
+        }
+    });
+
+    // handle imprint click
+    $('#logo').click(function() {
+        $.fn.fullpage.silentMoveTo('imprint', 1);
+    });
+
+    // init fullpage.js
     $('#fullpage').fullpage({
         //options here
         // licenseKey: 'should be set',
-        autoScrolling: true,
-        scrollHorizontally: true
+        anchors: ['welcome', 'cancel', 'faq', 'delete', 'fuzzy', 'faq2', 'imprint'],
+        autoScrolling: true
     });
-
-    //methods
     $.fn.fullpage.setAllowScrolling(true);
 
+    // Fuzzy TV Screen
     (function() {
     	"use strict";
 
