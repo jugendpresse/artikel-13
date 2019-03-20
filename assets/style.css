@@ -50,7 +50,8 @@ body {
 	-webkit-perspective: 1000;
 }
 
-#sec_imprint {
+#sec_imprint,
+#sec_privacy {
     background: #2A55AB;
     color: #ffffff;
     font-size: 0.75em;

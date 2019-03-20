@@ -83,7 +83,7 @@ $(document).ready(function() {
     $('#fullpage').fullpage({
         //options here
         // licenseKey: 'should be set',
-        anchors: ['welcome', 'cancel', 'faq', 'delete', 'fuzzy', 'faq2', 'imprint'],
+        anchors: ['welcome', 'cancel', 'faq', 'delete', 'fuzzy', 'faq2', 'imprint', 'privacy'],
         autoScrolling: true
     });
     $.fn.fullpage.setAllowScrolling(true);
