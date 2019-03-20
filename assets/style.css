@@ -186,3 +186,43 @@ details[open] summary {
     color: #ffffff;
     background: #000000;
 }
+
+p {
+    margin-bottom: 1em !important;
+}
+
+.w3-container {
+    background-color: #E53212;
+    height: 1em;
+    width: 10%;
+}
+
+#btn-cancel {
+    color: #E53212;
+    background-color: #eee;
+    border-color: #E53212;
+    font-weight: bold;
+}
+#btn-cancel:hover {
+    background-color: #ccc;
+}
+
+#btn-delete {
+    color: #eee;
+    background-color: #E53212;
+    border-color: #eee;
+    font-weight: bold;
+}
+#btn-delete:hover {
+    background-color: #EF8471;
+}
+
+#btn-more {
+    color: #fff;
+    background-color: #009367;
+    border-color: #fff;
+    font-weight: bold;
+}
+#btn-more:hover {
+    background-color: #66BEA4;
+}

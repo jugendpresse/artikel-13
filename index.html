@@ -6,6 +6,7 @@
         <title>M&ouml;chten Sie das Internet wirklich l&ouml;schen?</title>
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/dist/fullpage.min.css" />
+        <link rel="stylesheet" type="text/css" href="assets/w3.css" />
         <link rel="stylesheet" type="text/css" href="assets/style.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
@@ -49,7 +50,9 @@
                                 <img src="assets/trash.php?c=E53212" />
                             </div>
                             <div class="col-8 col-sm-7 col-md-4 col-lg-3 dialog-body dark center">
-                                Möchten Sie das Internet wirklich löschen?
+                                Möchten Sie das Internet wirklich löschen?<br /><br/>
+                                <button type="button" class="btn mr-3 mb-3" id="btn-cancel">Abbrechen</button>
+                                <button type="button" class="btn mr-3 mb-3" id="btn-delete">Löschen</button>
                             </div>
                             <div class="col-sm-1 col-md-3 col-lg-4"></div>
                         </div>
@@ -75,7 +78,9 @@
                                 <span class="icon">😊</span>
                             </div>
                             <div class="col-8 col-sm-7 col-md-4 col-lg-3 dialog-body center">
-                                Super! #Artikel13 gefährdet das Internet, wie du es bisher kennst. Aber du kannst helfen, das Internet zu retten!
+                                Super!<br/>
+                                #Artikel13 gefährdet das Internet, wie du es bisher kennst. Aber du kannst helfen, das Internet zu retten!<br /><br />
+                                <button type="button" class="btn" id="btn-more">Mehr</button>
                             </div>
                             <div class="col-sm-1 col-md-3 col-lg-4"></div>
                         </div>
@@ -163,7 +168,10 @@
                             </div>
                             <div class="col-8 col-sm-7 col-md-4 col-lg-3 dialog-body dark center">
                                 Das Internet wird gelöscht.<br/>
-                                Dies kann etwas dauern.
+                                Dies kann etwas dauern.<br /><br />
+                                <div class="w3-light-grey w3-round">
+                                    <div class="w3-container w3-round" id="delprogress"></div>
+                                </div>
                             </div>
                             <div class="col-sm-1 col-md-3 col-lg-4"></div>
                         </div>
@@ -284,7 +292,10 @@
                             </p>
                             <p>
                                 TV static noise:  <a class="text-white" href="https://codepen.io/alenaksu/pen/dGjeMZ" target="_blank">Alessandro Valeri</a><br/>
-                                Audio generation: <a class="text-white" href="https://stackoverflow.com/a/44215748/2782144" target="_blank">Giacomo Tecya Pigani</a>
+                                Audio noise: <a class="text-white" href="https://stackoverflow.com/a/44215748/2782144" target="_blank">Giacomo Tecya Pigani</a>
+                            </p>
+                            <p>
+                                Wir stellen den Code dieser Seite unter der GPLv3 Lizenz auf <a class="text-white" href="https://github.com/jugendpresse/artikel-13" target="_blank">GitHub</a> bereit.
                             </p>
                             <h6>Datenschutz</h6>
                             <p>

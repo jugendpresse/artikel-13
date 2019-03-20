@@ -1,21 +1,20 @@
 var filterwarnVisible = true;
+var audioCtx;
 
-// create web audio api context
-var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 function playNote(frequency, duration) {
-	// create Oscillator node
-	var oscillator = audioCtx.createOscillator();
+    // create Oscillator node
+    var oscillator = audioCtx.createOscillator();
 
-	oscillator.type = 'square';
-	oscillator.frequency.value = frequency; // value in hertz
-	oscillator.connect(audioCtx.destination);
-	oscillator.start();
+    oscillator.type = 'square';
+    oscillator.frequency.value = frequency; // value in hertz
+    oscillator.connect(audioCtx.destination);
+    oscillator.start();
 
-	setTimeout(
-		function(){
-			oscillator.stop();
-			playMelody();
-		}, duration);
+    setTimeout(
+        function(){
+            oscillator.stop();
+            playMelody();
+        }, duration);
 }
 
 $(document).ready(function() {
@@ -39,6 +38,40 @@ $(document).ready(function() {
            filterwarnVisible = true;
            $('details').show();
         }
+    });
+
+    // handle button clicks
+    $('#btn-cancel').click(function() {
+        $.fn.fullpage.silentMoveTo('cancel', 1);
+    });
+    $('#btn-more').click(function() {
+        $.fn.fullpage.silentMoveTo('faq', 1);
+    });
+    $('#btn-delete').click(function() {
+
+        // create web audio api context
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+        // handle sequence
+        $.fn.fullpage.silentMoveTo('delete', 1);
+        bar = $('#delprogress');
+        setTimeout(function() {
+            progress = setInterval(frame, 55);
+            var width = 10;
+            function frame() {
+                if (width == 100) {
+                    clearInterval(progress);
+                    $.fn.fullpage.silentMoveTo('fuzzy', 1);
+                    playNote(1000, 4500);
+                    setTimeout(function() {
+                        $.fn.fullpage.silentMoveTo('faq2', 1);
+                    }, 4500);
+                } else {
+                    width++;
+                    bar.css('width', width + '%');
+                }
+            }
+        }, 1500);
     });
 
     // handle imprint click
