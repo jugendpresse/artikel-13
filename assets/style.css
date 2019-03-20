@@ -181,6 +181,10 @@ details[open] {
     color: #000000;
 }
 
+details[open] a {
+    color: #007bff;
+}
+
 details[open] summary {
     border-bottom: 1px solid #aaa;
     margin-bottom: .5em;
@@ -226,4 +230,24 @@ p {
 }
 #btn-more:hover {
     background-color: #66BEA4;
+}
+
+.w3-light-grey {
+    color: #000 !important;
+    background-color: #f1f1f1 !important
+}
+.w3-round {
+    border-radius:4px
+}
+.w3-container {
+    padding:0.01em 16px;
+}
+.w3-container:after,
+.w3-container:before {
+    content: "";
+    display: table;
+    clear: both
+}
+#delprogress {
+    height: 1em;
 }
